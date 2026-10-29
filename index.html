@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legacy of Zodiac</title>
+<meta name="description" content="Legacy of Zodiac is a free online pixel-art RPG. Explore a shared world, hunt monsters, run gauntlets and join a guild with friends.">
+<meta property="og:title" content="Legacy of Zodiac">
+<meta property="og:description" content="A free online pixel-art RPG. Hunt, explore and adventure together.">
+<meta property="og:image" content="assets/art/hero.png">
+<link rel="icon" href="assets/art/crest.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Nunito:wght@400;600;800&family=Pixelify+Sans:wght@500;700&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <a class="brand" href="#top"><img class="px" src="assets/art/crest.png" alt="" width="40" height="40"><span>Legacy of Zodiac</span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">☰</button>
+  <nav id="nav-links">
+    <a href="#world">World</a>
+    <a href="#classes">Classes</a>
+    <a href="#faq">FAQ</a>
+    <a href="#patches">Patch notes</a>
+    <a class="btn btn-discord btn-sm" data-link="discord" href="#">Discord</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-sky px" aria-hidden="true"></div>
+    <canvas class="fireflies" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <img class="crest px" src="assets/art/crest.png" alt="" width="128" height="128">
+      <h1 class="title"><span class="title-small">Legacy of</span><span class="title-big">Zodiac</span></h1>
+      <p class="tagline">A free online pixel-art RPG. Hunt monsters, run gauntlets, trade, and build a guild with friends in one shared world.</p>
+      <div class="cta">
+        <a class="btn btn-gold" data-link="download" href="#"><img class="px" src="assets/art/chest.png" alt="" width="32" height="32">Download the launcher</a>
+        <a class="btn btn-discord" data-link="discord" href="#"><img class="px" src="assets/art/chat.png" alt="" width="32" height="32">Join the Discord</a>
+      </div>
+      <p class="fine">Windows · free to play · <span class="latest-version">latest client</span></p>
+    </div>
+    <div class="parade" aria-hidden="true"></div>
+  </section>
+
+  <section class="features">
+    <div class="feature"><h3>One shared world</h3><p>Everyone hunts the same monsters, sees each other walking and fighting, and chats in real time.</p></div>
+    <div class="feature"><h3>Gauntlets &amp; raids</h3><p>Race the clock through chains of rooms, or team up against raid bosses like Ignaroth.</p></div>
+    <div class="feature"><h3>Guilds &amp; trading</h3><p>Join a guild, trade face to face, post on the auction house and send gear by mail.</p></div>
+    <div class="feature"><h3>Gear worth chasing</h3><p>Rare drops, rarity bonuses, class weapons that level with you, and skins with effects.</p></div>
+  </section>
+
+  <section id="world" class="section">
+    <div class="section-head">
+      <img class="px icon" src="assets/art/map.png" alt="" width="64" height="64">
+      <div><h2>Explore the world</h2><p>A few of the places waiting for you. Click one for a closer look.</p></div>
+    </div>
+    <div class="filters" role="tablist" aria-label="Filter locations">
+      <button class="chip on" data-filter="all">All</button>
+      <button class="chip" data-filter="town">Towns</button>
+      <button class="chip" data-filter="wild">Wilds</button>
+      <button class="chip" data-filter="dungeon">Dungeons</button>
+      <button class="chip" data-filter="event">Events</button>
+    </div>
+    <div class="gallery">
+      <figure data-cat="town"><button><img class="px" src="assets/shots/haven-docks.webp" alt="Haven Docks" loading="lazy" width="512" height="384"></button><figcaption><b>Haven Docks</b>Where the boats come in, and where every adventurer ends up sooner or later.</figcaption></figure>
+      <figure data-cat="town"><button><img class="px" src="assets/shots/alkanor.webp" alt="Alkanor" loading="lazy" width="512" height="384"></button><figcaption><b>Alkanor</b>Canals, crystal fountains and guardsmen who have seen it all.</figcaption></figure>
+      <figure data-cat="wild"><button><img class="px" src="assets/shots/nara.webp" alt="Nara forest in the rain" loading="lazy" width="512" height="384"></button><figcaption><b>Nara</b>Old pines and muddy trails. Bring a cloak, the weather changes.</figcaption></figure>
+      <figure data-cat="wild"><button><img class="px" src="assets/shots/redhand-camp.webp" alt="Redhand Camp" loading="lazy" width="512" height="384"></button><figcaption><b>Redhand Camp</b>A bandit camp in the Briarford forest ring. Knock before entering.</figcaption></figure>
+      <figure data-cat="wild"><button><img class="px" src="assets/shots/prosian-desert.webp" alt="Prosian Desert" loading="lazy" width="512" height="384"></button><figcaption><b>Prosian Desert</b>Dozens of maps of sand, cliffs and whatever lives under them.</figcaption></figure>
+      <figure data-cat="wild"><button><img class="px" src="assets/shots/ciclo-del-agua.webp" alt="Ciclo Del Agua" loading="lazy" width="512" height="384"></button><figcaption><b>Ciclo Del Agua</b>Lily pads, banners and a lot of water.</figcaption></figure>
+      <figure data-cat="dungeon"><button><img class="px" src="assets/shots/dxjza-ruin.webp" alt="Dxj'za Ruin" loading="lazy" width="512" height="384"></button><figcaption><b>Dxj'za Ruins</b>Gate to the first gauntlet. Hard mode needs a Dxj'za Seal.</figcaption></figure>
+      <figure data-cat="dungeon"><button><img class="px" src="assets/shots/ancient-crypt.webp" alt="Ancient Crypt" loading="lazy" width="512" height="384"></button><figcaption><b>Ancient Crypt</b>Eighteen floors of the restless dead.</figcaption></figure>
+      <figure data-cat="dungeon"><button><img class="px" src="assets/shots/starlit-mines.webp" alt="Starlit Mines" loading="lazy" width="512" height="384"></button><figcaption><b>Starlit Mines</b>Ore, crystals and the occasional thing that bites.</figcaption></figure>
+      <figure data-cat="event"><button><img class="px" src="assets/shots/hollow-chapel.webp" alt="Hollow Hill: Hollow Chapel" loading="lazy" width="512" height="384"></button><figcaption><b>Hollow Chapel</b>Hollow's Eve: the Hollow King waits at the end of the graveyard gauntlet.</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="classes" class="section">
+    <div class="section-head">
+      <img class="px icon" src="assets/art/helmet.png" alt="" width="64" height="64">
+      <div><h2>Pick your class</h2><p>Eight classes, each with two signature skills on keys 1 and 2.</p></div>
+    </div>
+    <div class="classes"></div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="section-head">
+      <img class="px icon" src="assets/art/sword.png" alt="" width="64" height="64">
+      <div><h2>FAQ &amp; controls</h2><p>Everything you need for your first hour.</p></div>
+    </div>
+    <div class="faq-grid">
+      <div class="panel controls">
+        <h3>Basic controls</h3>
+        <dl>
+          <dt><kbd>←</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>→</kbd></dt><dd>Move</dd>
+          <dt><kbd>Ctrl</kbd></dt><dd>Attack</dd>
+          <dt><kbd>1</kbd><kbd>2</kbd></dt><dd>Class skills</dd>
+          <dt><kbd>3</kbd>–<kbd>0</kbd></dt><dd>Hotbar spells</dd>
+          <dt><kbd>Enter</kbd></dt><dd>Chat</dd>
+          <dt><kbd>Tab</kbd></dt><dd>Target a player</dd>
+          <dt><kbd>Esc</kbd></dt><dd>Close the top window</dd>
+        </dl>
+        <h3>Windows</h3>
+        <dl class="cols">
+          <dt><kbd>I</kbd></dt><dd>Inventory</dd>
+          <dt><kbd>K</kbd></dt><dd>Spell book</dd>
+          <dt><kbd>Q</kbd></dt><dd>Quest log</dd>
+          <dt><kbd>B</kbd></dt><dd>Bestiary</dd>
+          <dt><kbd>M</kbd></dt><dd>World map</dd>
+          <dt><kbd>G</kbd></dt><dd>Guild</dd>
+          <dt><kbd>P</kbd></dt><dd>Pets</dd>
+          <dt><kbd>L</kbd></dt><dd>Achievements</dd>
+          <dt><kbd>T</kbd></dt><dd>Shop / talk</dd>
+          <dt><kbd>R</kbd></dt><dd>Repair all (in shop)</dd>
+          <dt><kbd>E</kbd></dt><dd>Mailbox</dd>
+          <dt><kbd>F12</kbd></dt><dd>Screenshot</dd>
+        </dl>
+        <p class="note">Hold <kbd>Alt</kbd> over an item for full details. Gamepads work too. The chat, pickup and screenshot keys can be changed in Options.</p>
+      </div>
+      <div class="qa">
+        <details open><summary>How do I start playing?</summary><p>Download the launcher, run it, and it fetches the latest game client for you. Then create an account on the start screen, pick a class, and you're in.</p></details>
+        <details><summary>Is it free?</summary><p>Yes. The game is free to play.</p></details>
+        <details><summary>Windows says “Windows protected your PC”.</summary><p>The game isn't code-signed yet. Click <b>More info</b>, then <b>Run anyway</b>.</p></details>
+        <details><summary>Can I play on Linux or Mac?</summary><p>The client is a Windows build. Linux players run it through Wine or Proton. Ask in the Discord if you get stuck.</p></details>
+        <details><summary>How do I pick things up?</summary><p>Loot is picked up automatically when you walk over it. You can turn that off in Options and use <kbd>Space</kbd> instead.</p></details>
+        <details><summary>My gear is breaking!</summary><p>Gear wears down as you fight. Visit a repair shop and press <kbd>R</kbd> to fix everything before it breaks.</p></details>
+        <details><summary>Where do I report bugs or suggest ideas?</summary><p>In the <a data-link="discord" href="#">Discord</a>. Screenshots (<kbd>F12</kbd>) help a lot.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="patches" class="section">
+    <div class="section-head">
+      <img class="px icon" src="assets/art/scroll.png" alt="" width="64" height="64">
+      <div><h2>Patch notes</h2><p>What changed in each client update. The launcher grabs new versions for you.</p></div>
+    </div>
+    <div class="patches" aria-live="polite"></div>
+    <div class="patches-more">
+      <button class="btn btn-ghost" id="more-patches" hidden>Show older updates</button>
+      <a class="btn btn-ghost" id="all-releases" href="#" target="_blank" rel="noopener">All releases on GitHub</a>
+    </div>
+  </section>
+
+  <section class="discord-band">
+    <img class="px" src="assets/art/chat.png" alt="" width="96" height="96">
+    <div>
+      <h2>Join the community</h2>
+      <p>Patch pings, events, party finding, trading and bug reports. Come say hi.</p>
+    </div>
+    <a class="btn btn-discord btn-lg" data-link="discord" href="#">Join the Discord</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <img class="px" src="assets/art/crest.png" alt="" width="48" height="48">
+  <p>Legacy of Zodiac · made with Godot · <a href="#top">Back to top</a></p>
+</footer>
+
+<div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Location screenshot">
+  <button class="lb-close" aria-label="Close">✕</button>
+  <button class="lb-prev" aria-label="Previous">‹</button>
+  <figure><img class="px" alt=""><figcaption></figcaption></figure>
+  <button class="lb-next" aria-label="Next">›</button>
+</div>
+
+<script src="config.js"></script>
+<script src="patch-notes.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
