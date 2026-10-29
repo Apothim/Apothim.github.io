@@ -25,11 +25,9 @@
     ["dragoon", "Dragoon", "A lancer who charges into the fight and rallies with a war cry.", "Lance Charge · War Cry"],
     ["samurai", "Samurai", "Lightning-fast blade work and cuts that keep on bleeding.", "Iaido Slash · Bleeding Cut"],
     ["cleric", "Cleric", "Holy magic to heal yourself and smite what's ahead.", "Heal · Holy Smite"],
-    ["hawkeye", "Hawk Eye", "An archer who hits from six tiles away and pins foes in place.", "Piercing Arrow · Pinning Shot"],
     ["monk", "Monk", "Flurries of blows and skin like iron.", "Flurry · Iron Skin"],
     ["sorcerer", "Sorcerer", "Fire at range and frost that freezes everything nearby.", "Fireball · Frost Nova"],
     ["rogue", "Rogue", "Poisoned blades and brutal finishing strikes.", "Poison Blade · Eviscerate"],
-    ["summoner", "Summoner", "Bone magic and minions that hit harder together.", "Bone Spear · Grave Bond"],
   ];
   $(".classes").innerHTML = CLASSES.map(([id, name, text, skills]) => `
     <article class="class-card">
