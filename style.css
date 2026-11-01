@@ -114,6 +114,8 @@ h3 { font-size: 22px; }
 .tagline { font-size: clamp(17px, 2.2vw, 20px); color: var(--ink); max-width: 600px; margin: 0 auto 26px; text-shadow: 0 2px 6px #000; }
 .cta { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; }
 .fine { margin-top: 18px; color: var(--muted); font: 14px "Silkscreen", monospace; text-shadow: 0 2px 4px #000; }
+.fine-note { margin: 6px auto 0; max-width: 46ch; font-size: 12px; }
+.fine-note b { color: var(--ink); font-weight: normal; }
 
 .parade { position: absolute; left: 0; right: 0; bottom: 84px; height: 64px; z-index: 2; pointer-events: none; }
 .walker {
